@@ -1,0 +1,32 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: whitesmoke;
+}
+
+.menu{
+    color: white;
+    font-size: 80px;
+    text-align: center;
+    background-color: #181D31;
+}
+
+.card1{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.529);
+    transition: 0.3s;
+    width: 305px;
+    text-align: center;
+}
+.img1{
+    margin: 15px 15px;
+}
+
+.card1:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.555);
+}
+
+.container {
+    padding: 5px 20px;
+}
