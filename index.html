@@ -1,49 +1,53 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="pasta restaurant that provide a special meals with special ingredients
-    you can order your meal through it by Arte">
-    <meta name="author" content="Mohammed Alhayek">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="refresh" content="30">
+    <script src="javaScript/javaScript.js"></script>
+    <link rel="stylesheet" href="CSS/styles.css"/>
     <link rel="shortcut icon" href="images/logo.jpg"/>
-    <link rel="stylesheet" href="CSS/styles.css" />
-    <link rel="stylesheet" href="CSS/index.css" />
-    <title>Arte Restaurant</title>
+    <title>Arte</title>
 </head>
-
 <body>
     <header>
-            <a class="Anker" href="index.html"><img src="images/logo.jpg" alt=""></a> 
+        <a class="Anker" href="index.html"><img src="images/logo.jpg" alt="logo"></a> 
+    
+        <h1 class="tit">Arte</h1>
+    
+        <nav>
+            <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="searchFood.html">search for food</a></li>
+            <li><a href="exploreNewRecipes.html">explore New Recipes</a></li>
+            <li><a href="contactUs.html">Contact us</a></li>
+            </ul>
+        </nav>
         
-            <h1 class="headTitle">Arte Restaurant</h1>
-        
-            <nav>
-                <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="menu.html">Menu</a></li>
-                <li><a href="contactUs.html">Contact Us</a></li>
-                <li><a href="login.html">Login</a></li>
-                </ul>
-            </nav>
-    </header>
-    <main>
-        <section class="hero">
-            <h2>Start your journey with a special taste by Arte</h2>
-        </section>
-        <section class="but">
-            <button class="button-56"><a href="./menu.html" class="anImg">Order Now</a></button>
-        </section>
-    </main>
-    <footer>
-        <p>
-            Copyright &copy;
-            <script>
-              document.write(new Date().getFullYear());
-            </script>
-            Arte Restaurant All Rights Reserved
-          </p>
-    </footer>
-</body>
+</header>
 
+<main>
+    <section class="hero-description">
+        <h2>Start your journey and explore new food and recipes with Arte</h2>
+    </section>
+    <section class="buttons">
+        <section>
+            <button class="button-56" role="button"><a href="searchFood.html" class="anImg">explore foods</a></button>
+        </section>
+        <section>
+            <button class="button-56" role="button"><a href="searchRecipes.html" class="anImg">explore recipes</a></button>
+        </section>
+    </section>
+    
+</main>
+<footer>
+    <p>
+        Copyright &copy;
+        <script>
+          document.write(new Date().getFullYear());
+        </script>
+        Arte All Rights Reserved
+      </p>
+</footer>
+</body>
 </html>
