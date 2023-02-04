@@ -1,0 +1,32 @@
+.adminHead{
+    margin-top: 90px;
+    text-align: center;
+}
+.h1Form3{
+    color: #f0e9d2;
+    font-weight: bold;
+    font-size: 40px;
+}
+.adminForm{
+    border: 2px solid black;
+    padding: 20px;
+    background-color: #f0e9d2;
+    width: 400px;
+    margin-left: 560px;
+}
+label{
+    font-weight: bold;
+    font-size: 20px;
+}
+input[type=text]{
+    width: 300px;
+}
+.button{
+    color: #f0e9d2;
+    background-color: #181d31;
+    padding: 15px;
+    width: 100px;
+}
+.button:hover{
+    background-color: #43B14B;
+}

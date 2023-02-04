@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="javaScript/javaScript.js"></script>
     <link rel="stylesheet" href="CSS/contactUs.css"/>
     <link rel="shortcut icon" href="images/logo.jpg"/>
     <title>Arte</title>
@@ -22,20 +21,29 @@
             <img src="images/logo.jpg" style="width:100%">
           </div>
           <div class="column">
-            <form action="javaScript/javascript3.js">
+            <form action="Process/add_process.php" method="GET" class="addForm">
               <label for="fname">First Name</label>
-              <input type="text" id="fname" name="firstname" placeholder="Your first name..">
+              <input type="text" id="fname" name="fname" placeholder="Your first name..">
               <label for="lname">Last Name</label>
-              <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-              <label for="feedback">Your Feedback About</label>
-              <select id="feedback" name="feedback">
-                <option value="maintenance">Maintenance</option>
-                <option value="enhancement">Enhancement</option>
-                <option value="problem">Problem</option>
+              <input type="text" id="lname" name="lname" placeholder="Your last name..">
+              <label for="topic">Your Feedback About</label>
+              <select id="topic" name="topic">
+                <option value="Maintenance">Maintenance</option>
+                <option value="Enhancement">Enhancement</option>
+                <option value="Problem">Problem</option>
               </select>
-              <label for="subject">More Info</label>
-              <textarea id="subject" name="subject" placeholder="Write here..." style="height:170px"></textarea>
+              <label for="info">More Info</label>
+              <textarea id="info" name="info" placeholder="Write here..." style="height:170px"></textarea>
               <input type="submit" value="Submit" class="button-56">
+              <div>
+                    <?php
+                        if(!empty($_GET)){
+                            if(isset($_GET['Error'])){
+                                echo $_GET['Error'];
+                            }
+                        }
+                    ?>
+                </div>
             </form>
           </div>
         </div>
@@ -50,6 +58,5 @@
         Arte All Rights Reserved
       </p>
 </footer>
-<script src="javaScript/javascript3.js"></script>
 </body>
 </html>
