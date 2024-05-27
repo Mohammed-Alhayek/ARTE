@@ -15,7 +15,7 @@ session_start();
     <header>
         <a class="Anker" href="index.html"><img src="images/logo.jpg" alt="logo"></a> 
     
-        <h1 class="tit">Arte</h1>
+        <h1 class="tit">ARTE</h1>
     
         <nav>
             <ul>
